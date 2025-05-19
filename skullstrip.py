@@ -16,8 +16,8 @@ for patient in glob.glob("/your/path/to/patientfolders/here/*/*image.nii*"):
 	ss_name = "your/path/here/output/" + basename + "_image_ss.nii.gz"
 	ss_n4_name = "your/path/here/output/" + basename + "_image_ss_n4.nii.gz"
 
-	call(['python3.6 HD-BET/HD_BET/hd-bet', -i $patient -o your/path/here/output/image_ss.nii.gz -device cpu -mode fast'])
-
+	call(['python3.6 HD-BET/HD_BET/hd-bet', -i $patient -o your/path/here/output/image_ss.nii.gz -device cpu -mode fast']) #can modify this if you have a gpu available
+	
 	#os.system('python3.6 time python3.6 HD-BET/HD_BET/hd-bet -i $patient -o your/path/here/output/image_ss.nii.gz -device cpu -mode fast' % ])
 
 
